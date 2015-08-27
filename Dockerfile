@@ -31,10 +31,6 @@ RUN mkdir -p /root/.ssh && touch /root/.ssh/authorized_keys && chmod 700 /root/.
 #ADD id_rsa.pub /root/.ssh/authorized_keys
 
 
-# Install xdebug for php debugging
-RUN yum install -y php-pecl-xdebug
-ADD xdebug_settings.ini /etc/php.d/
-
 ADD phpinfo.php /var/www/html/
 ADD supervisord.conf /etc/
 EXPOSE 22 80 443
