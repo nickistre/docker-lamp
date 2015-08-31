@@ -18,7 +18,7 @@ RUN apt-get install -y mysql-client mysql-server
 #RUN service mysqld start
 
 # install php
-RUN apt-get install -y php5 php5-mysql php5-dev php5-gd php5-memcache php5-pspell php5-snmp php5-xmlrpc libapache2-mod-php5 php5-cli
+RUN apt-get install -y php5 php5-mysql php5-dev php5-gd php5-memcache php5-pspell php5-snmp snmp php5-xmlrpc libapache2-mod-php5 php5-cli
 #RUN yum install -y php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
 
 # install supervisord
